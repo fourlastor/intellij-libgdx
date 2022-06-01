@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.fourlastor.intellijlibgdx.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.fourlastor.intellijlibgdx.MyBundle
 
 class MyApplicationService {
 
