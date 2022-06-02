@@ -114,3 +114,9 @@ tasks {
         channels.set(listOf(properties("pluginVersion").split('-').getOrElse(1) { "default" }.split('.').first()))
     }
 }
+
+dependencies {
+    val gdxVersion = "1.11.0"
+    api("com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop")
+    api("com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion")
+}
