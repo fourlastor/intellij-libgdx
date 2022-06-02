@@ -7,17 +7,28 @@ import java.awt.BorderLayout
 import java.awt.Dimension
 
 class GdxFrame(
-    listener: ApplicationListener
+    private val factory: () -> ApplicationListener
 ) : BorderLayoutPanel() {
 
-    private val canvas: LwjglAWTCanvas = LwjglAWTCanvas(listener)
+    private lateinit var canvas: LwjglAWTCanvas
 
     init {
+        initializeCanvas()
+    }
+
+    private fun initializeCanvas() {
+        canvas = LwjglAWTCanvas(factory())
         add(canvas.canvas, BorderLayout.CENTER)
+    }
+
+    override fun addNotify() {
+        super.addNotify()
+        initializeCanvas()
     }
 
     override fun removeNotify() {
         canvas.stop()
+        remove(canvas.canvas)
         super.removeNotify()
     }
 

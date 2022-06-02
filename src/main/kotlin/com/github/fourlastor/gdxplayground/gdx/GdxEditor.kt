@@ -6,7 +6,7 @@ import com.intellij.openapi.vfs.VirtualFile
 import javax.swing.JComponent
 
 class GdxEditor(
-    application: ApplicationListener,
+    application: () -> ApplicationListener,
     private val editorFile: VirtualFile,
 ) : FileEditorBase() {
 
