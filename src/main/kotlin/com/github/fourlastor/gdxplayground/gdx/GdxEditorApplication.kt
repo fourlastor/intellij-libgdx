@@ -10,7 +10,6 @@ class GdxEditorApplication : ApplicationListener {
     private lateinit var batch: SpriteBatch
     private lateinit var font: BitmapFont
 
-
     override fun create() {
         batch = SpriteBatch()
         font = BitmapFont()

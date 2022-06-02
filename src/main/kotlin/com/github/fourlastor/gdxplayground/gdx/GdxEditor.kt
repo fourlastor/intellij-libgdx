@@ -8,7 +8,7 @@ import javax.swing.JComponent
 class GdxEditor(
     application: ApplicationListener,
     private val editorFile: VirtualFile,
-): FileEditorBase() {
+) : FileEditorBase() {
 
     private val component = GdxFrame(application)
 
