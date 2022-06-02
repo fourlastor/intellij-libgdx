@@ -1,4 +1,4 @@
-package com.github.fourlastor.intellijlibgdx.gdx
+package com.github.fourlastor.gdxplayground.gdx
 
 import com.intellij.openapi.fileEditor.FileEditor
 import com.intellij.openapi.fileEditor.FileEditorPolicy

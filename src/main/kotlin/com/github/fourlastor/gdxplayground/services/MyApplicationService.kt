@@ -1,6 +1,6 @@
-package com.github.fourlastor.intellijlibgdx.services
+package com.github.fourlastor.gdxplayground.services
 
-import com.github.fourlastor.intellijlibgdx.MyBundle
+import com.github.fourlastor.gdxplayground.MyBundle
 
 class MyApplicationService {
 

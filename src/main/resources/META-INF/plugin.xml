@@ -1,19 +1,19 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.fourlastor.intellijlibgdx</id>
+    <id>com.github.fourlastor.gdxplayground</id>
     <name>GDX playground</name>
     <vendor>fourlastor</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <fileEditorProvider implementation="com.github.fourlastor.intellijlibgdx.gdx.GdxEditorProvider" />
-        <applicationService serviceImplementation="com.github.fourlastor.intellijlibgdx.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.fourlastor.intellijlibgdx.services.MyProjectService"/>
+        <fileEditorProvider implementation="com.github.fourlastor.gdxplayground.gdx.GdxEditorProvider" />
+        <applicationService serviceImplementation="com.github.fourlastor.gdxplayground.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.github.fourlastor.gdxplayground.services.MyProjectService"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.fourlastor.intellijlibgdx.listeners.MyProjectManagerListener"
+        <listener class="com.github.fourlastor.gdxplayground.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>

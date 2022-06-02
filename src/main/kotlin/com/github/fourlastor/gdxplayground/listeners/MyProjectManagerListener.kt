@@ -1,9 +1,9 @@
-package com.github.fourlastor.intellijlibgdx.listeners
+package com.github.fourlastor.gdxplayground.listeners
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.project.ProjectManagerListener
-import com.github.fourlastor.intellijlibgdx.services.MyProjectService
+import com.github.fourlastor.gdxplayground.services.MyProjectService
 
 internal class MyProjectManagerListener : ProjectManagerListener {
 

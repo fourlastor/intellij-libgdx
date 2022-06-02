@@ -1,4 +1,4 @@
-package com.github.fourlastor.intellijlibgdx.gdx
+package com.github.fourlastor.gdxplayground.gdx
 
 import com.badlogic.gdx.ApplicationListener
 import com.badlogic.gdx.backends.lwjgl.LwjglAWTCanvas
