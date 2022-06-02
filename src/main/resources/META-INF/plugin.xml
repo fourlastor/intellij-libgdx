@@ -1,12 +1,13 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.fourlastor.intellijlibgdx</id>
-    <name>intellij-libgdx</name>
+    <name>GDX playground</name>
     <vendor>fourlastor</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <fileEditorProvider implementation="com.github.fourlastor.intellijlibgdx.gdx.GdxEditorProvider" />
         <applicationService serviceImplementation="com.github.fourlastor.intellijlibgdx.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.fourlastor.intellijlibgdx.services.MyProjectService"/>
     </extensions>
