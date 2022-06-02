@@ -8,5 +8,10 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <fileEditorProvider implementation="com.github.fourlastor.gdxplayground.gdx.GdxEditorProvider" />
+        <fileType
+                name="glTF Model"
+                implementationClass="com.github.fourlastor.gdxplayground.filetype.GltfFile"
+                fieldName="INSTANCE"
+                extensions="gltf"/>
     </extensions>
 </idea-plugin>
