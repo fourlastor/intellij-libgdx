@@ -6,11 +6,11 @@ import com.intellij.openapi.vfs.VirtualFile
 import javax.swing.JComponent
 
 class GdxEditor(
-    application: () -> ApplicationListener,
+    appFactory: (file:VirtualFile) -> ApplicationListener,
     private val editorFile: VirtualFile,
 ) : FileEditorBase() {
 
-    private val component = GdxFrame(application)
+    private val component = GdxFrame(appFactory, editorFile)
 
     override fun getComponent(): JComponent = component
 

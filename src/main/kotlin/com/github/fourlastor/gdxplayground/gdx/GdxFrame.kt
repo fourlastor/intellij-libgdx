@@ -2,12 +2,14 @@ package com.github.fourlastor.gdxplayground.gdx
 
 import com.badlogic.gdx.ApplicationListener
 import com.badlogic.gdx.backends.lwjgl.LwjglAWTCanvas
+import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.util.ui.components.BorderLayoutPanel
 import java.awt.BorderLayout
 import java.awt.Dimension
 
 class GdxFrame(
-    private val factory: () -> ApplicationListener
+    private val factory: (file: VirtualFile) -> ApplicationListener,
+    private val editorFile: VirtualFile
 ) : BorderLayoutPanel() {
 
     private lateinit var canvas: LwjglAWTCanvas
@@ -17,7 +19,7 @@ class GdxFrame(
     }
 
     private fun initializeCanvas() {
-        canvas = LwjglAWTCanvas(factory())
+        canvas = LwjglAWTCanvas(factory(editorFile))
         add(canvas.canvas, BorderLayout.CENTER)
     }
 

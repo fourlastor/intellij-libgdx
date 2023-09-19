@@ -5,8 +5,11 @@ import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.utils.ScreenUtils
+import com.intellij.openapi.vfs.VirtualFile
 
-class GdxEditorApplication : ApplicationListener {
+class GdxEditorApplication(
+    private val virtualFile: VirtualFile
+) : ApplicationListener {
     private lateinit var batch: SpriteBatch
     private lateinit var font: BitmapFont
 

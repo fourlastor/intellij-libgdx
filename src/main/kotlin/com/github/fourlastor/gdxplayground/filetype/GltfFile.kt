@@ -13,7 +13,7 @@ class GltfFile : FileType {
     }
 
     override fun getDefaultExtension(): String {
-        return "gltf"
+        return "gdxscene"
     }
 
     override fun getIcon() = ICON

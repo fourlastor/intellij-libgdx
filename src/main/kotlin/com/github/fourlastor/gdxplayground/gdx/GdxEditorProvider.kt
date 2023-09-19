@@ -12,7 +12,7 @@ class GdxEditorProvider : FileEditorProvider, DumbAware {
     override fun accept(project: Project, file: VirtualFile): Boolean = file.fileType is GltfFile
 
     override fun createEditor(project: Project, file: VirtualFile): FileEditor {
-        return GdxEditor({ GdxEditorApplication() }, file)
+        return GdxEditor({ GdxEditorApplication(it) }, file)
     }
 
     override fun getEditorTypeId(): String = "GDX-editor"
