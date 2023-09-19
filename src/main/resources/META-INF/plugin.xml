@@ -12,6 +12,6 @@
                 name="glTF Model"
                 implementationClass="com.github.fourlastor.gdxplayground.filetype.GltfFile"
                 fieldName="INSTANCE"
-                extensions="gltf"/>
+                extensions="gdxscene"/>
     </extensions>
 </idea-plugin>
