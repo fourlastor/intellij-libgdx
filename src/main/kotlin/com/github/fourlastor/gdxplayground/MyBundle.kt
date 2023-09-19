@@ -1,4 +1,4 @@
-package com.github.fourlastor.intellijlibgdx
+package com.github.fourlastor.gdxplayground
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
